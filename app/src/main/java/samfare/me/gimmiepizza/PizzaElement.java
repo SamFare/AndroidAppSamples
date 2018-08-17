@@ -27,6 +27,10 @@ public class PizzaElement extends Fragment {
         Button plusButton = pizzaView.findViewById(R.id.plusButton);
         plusButton.setOnClickListener(plusButtonListener);
 
+
+        Button minusButton = pizzaView.findViewById(R.id.minusButton);
+        minusButton.setOnClickListener(minusButtonListener);
+
         return pizzaView;
     }
 
@@ -35,6 +39,15 @@ public class PizzaElement extends Fragment {
             EditText numberOfPizza =  getView().findViewById(R.id.numberOfPizza);
             int newNumber = Integer.parseInt(numberOfPizza.getText().toString());
             numberOfPizza.setText(String.valueOf(++newNumber));
+        }
+    };
+
+
+    private View.OnClickListener minusButtonListener = new View.OnClickListener() {
+        public void onClick(View v) {
+            EditText numberOfPizza =  getView().findViewById(R.id.numberOfPizza);
+            int newNumber = Integer.parseInt(numberOfPizza.getText().toString());
+            numberOfPizza.setText(String.valueOf(--newNumber));
         }
     };
 

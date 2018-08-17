@@ -16,10 +16,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        LinearLayout pizzaLayout = findViewById(R.id.pizzaLinearLayout);
-
-
-
         for (String pizzaName : (ArrayList<String>) this.pizzas) {
             PizzaElement pizzaFragment = new PizzaElement();
 
