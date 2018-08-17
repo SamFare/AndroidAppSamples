@@ -7,6 +7,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.TextView;
 
 
@@ -22,8 +24,20 @@ public class PizzaElement extends Fragment {
         TextView textView = pizzaView.findViewById(R.id.pizzaName);
         textView.setText(getArguments().getString("pizzaName"));
 
+        Button plusButton = pizzaView.findViewById(R.id.plusButton);
+        plusButton.setOnClickListener(plusButtonListener);
+
         return pizzaView;
     }
+
+    private View.OnClickListener plusButtonListener = new View.OnClickListener() {
+        public void onClick(View v) {
+            EditText numberOfPizza =  getView().findViewById(R.id.numberOfPizza);
+            int newNumber = Integer.parseInt(numberOfPizza.getText().toString());
+            numberOfPizza.setText(String.valueOf(++newNumber));
+        }
+    };
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -31,5 +45,4 @@ public class PizzaElement extends Fragment {
 
 
     }
-
 }

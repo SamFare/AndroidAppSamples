@@ -3,5 +3,6 @@
     <string name="price">Price</string>
     <string name="plus">+</string>
     <string name="minus">-</string>
+    <string name="pizza">Pizza</string>
 
 </resources>

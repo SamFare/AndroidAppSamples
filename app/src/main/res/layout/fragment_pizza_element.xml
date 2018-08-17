@@ -3,36 +3,43 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="50dp"
+    android:weightSum="1"
     tools:context=".PizzaElement">
 
     <TextView
         android:id="@+id/pizzaName"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="match_parent"
-        android:layout_weight="0.7"
-        android:text="1" />
 
-    <Button
+        android:layout_weight="0.6"
+        android:text="@string/pizza"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <android.support.v7.widget.AppCompatButton
         android:id="@+id/minusButton"
-        android:layout_width="13dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_weight="0.15"
+        android:layout_weight="0.175"
         android:text="@string/minus" />
 
-    <TextView
+    <EditText
         android:id="@+id/numberOfPizza"
-        android:layout_width="1dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_margin="0dp"
         android:layout_weight="0.05"
-        android:text="1"
-        android:textAlignment="center"/>
+        android:inputType="number"
+        android:text="0"
+        android:textAlignment="center" />
 
-    <Button
+    <android.support.v7.widget.AppCompatButton
         android:id="@+id/plusButton"
-        android:layout_width="13dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_weight="0.15"
+        android:layout_weight="0.175"
+        android:onClick="plusPressed"
         android:text="@string/plus" />
 
 </LinearLayout>
