@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">GimmiePizza</string>
+    <string name="price">Price</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+
+</resources>

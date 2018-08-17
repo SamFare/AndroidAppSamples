@@ -7,7 +7,6 @@
 
 # Java class files
 *.class
-
 # Generated files
 bin/
 gen/

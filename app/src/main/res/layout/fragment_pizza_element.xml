@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    tools:context=".PizzaElement">
+
+    <TextView
+        android:id="@+id/pizzaName"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="0.7"
+        android:text="1" />
+
+    <Button
+        android:id="@+id/minusButton"
+        android:layout_width="13dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.15"
+        android:text="@string/minus" />
+
+    <TextView
+        android:id="@+id/numberOfPizza"
+        android:layout_width="1dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="0dp"
+        android:layout_weight="0.05"
+        android:text="1"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/plusButton"
+        android:layout_width="13dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.15"
+        android:text="@string/plus" />
+
+</LinearLayout>
